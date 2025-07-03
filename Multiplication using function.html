@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function using java script</title>
+    <style>
+        h1{
+            color: rgb(253, 13, 53);
+        }
+        button {
+            background-color: jgrgb(12, 231, 122);
+        }
+        body{
+            background-image: url('https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=') ;
+    </style>
+</head>
+<body>
+    <h1>Multiplication using function</h1>
+    <button onclick="multiply(5, 10)">Multiply 5 and 10</button>
+    <p id="result"></p>
+
+    <script>
+        function multiply(x, y) {
+            var product = x * y;
+            document.getElementById("result").innerHTML = "The product of " + x + " and " + y + " is: " + product;
+        }
+    </script>
+    
+</body>
+</html>
