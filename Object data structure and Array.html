@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors informations</title>
+    <style>
+        body {
+            background-color: #7fe984;
+            font-family: Arial, Arial, sans-serif;
+            color: #333;
+        }
+        h3 {
+            color: #2c3e50;
+        }
+        h4 {
+            color: #34495e;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h3>My fevorite players infomation</h3>
+   <h4> <p>This are some informations about my players colours :</p></h4>
+    <p id="colos"></p>
+<p id="colos1"></p>
+    <p id="colos2"></p>
+    <p id="colos3"></p>
+    <script>
+var players= {
+        name :"Ronaldo",
+        age : 38,
+        country : "Portugal",
+        club : "Al Nassr",}
+    var math ={   
+         name: "Neymar",
+        age: 31,
+        country: "Brazil",
+        club: "Al Hilal",}
+        var messi = {
+        name :"Mbappe",
+        age : 24,
+        country : "France",
+        club : "Paris Saint-Germain",
+}
+document.getElementById("colos").innerHTML = "player 1 name is " + players.name + ", age is " + players.age + ", country is " + players.country + ", club is " + players.club;
+document.getElementById("colos1").innerHTML = "player 2 name is " + math.name + ", age is " + math.age + ", country is " + math.country + ", club is " + math.club;
+document.getElementById("colos2").innerHTML = "player 3 name is " + messi.name + ", age is " + messi.age + ", country is " + messi.country + ", club is " + messi.club;
+    </script>
+</body>
+</html>
