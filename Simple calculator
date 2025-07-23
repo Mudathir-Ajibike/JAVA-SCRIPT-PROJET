@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>My calculator</h1>
-    <p><h3> of different numbers using <b>variable and statement</b>.</p></h3>
+    <p><h3>Calculation of different numbers using <b>variable and statement</b>.</p></h3>
     <p id="code"></p>
     <p id="kiddo"></p>
     <script>

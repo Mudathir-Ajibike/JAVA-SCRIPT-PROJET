@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+    <style>
+        body{
+            color: rgb(26, 10, 243);
+            background-color: rgb(223, 209, 23);
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <h2>Lets Print Random Numbers</h2> 
+   <h4><p>let print random numbers from 0 - 20</p></h4>
+   <p id="randomNumbers"></p>
+    <script>
+   var text ="";
+   var i= 0;
+    while (i < 21) {
+         text += "<br> The number is" + i 
+         i++;
+    }
+    document.getElementById("randomNumbers").innerHTML = text;   
+   </script>
+</body>
+</html>
