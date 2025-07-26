@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array mapping and sorting</title>
+    <style>
+        body {
+background: radial-gradient(circle, rgb(244, 248, 244) 30%, rgb(8, 123, 238) 100%);
+            color: rgb(216, 33, 134);
+            font-family: Arial, sans-serif;
+        }
+        button {
+            background-color: rgb(12, 216, 231);
+            color: white;
+            padding: 5px 7px;
+            border: 1px solid rgb(12, 125, 231);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Array Mapping And Sorting</h2>
+    <h4><p>let's map and sort some numbers;</p></h4>
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <p id="result"></p>
+    <p id="product_value"></p>
+    <script>
+        var numbers = [30, 57, 5, 99, 36];
+        function myFunction(num){
+            return num * 12;
+        }
+        var newarray =numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = "The new array is: " + newarray;
+    // End of mapping part
+        document.getElementById("result").innerHTML =newarray;
+        // Beginning of ascending
+        function ascending() {
+            newarray.sort(function(a, b){return a - b});
+            document.getElementById("result").innerHTML ="Ascending order:"+ newarray;
+        }
+        // Beginning of descending
+        function descending() {
+                newarray.sort(function (a, b) { return b - a });
+                document.getElementById("result").innerHTML ="Descending order:"+ newarray;
+            }
+    </script>
+</body>
+</html>
