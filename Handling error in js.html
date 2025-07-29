@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error in js</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgb(244, 248, 244) 30%, rgb(12, 205, 253) 100%);
+            color: rgb(240, 11, 22);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Detecting error in java script</h2>
+    <h4><p>let's see how to handle error in java script;</p></h4>
+    <p id="result"></p>
+    <script>
+        try {
+            button("what is my name");
+            
+            
+        }
+        catch (error) {
+            document.getElementById("result").innerHTML = "The error here is: " + error.message;
+            
+        }
+    </script>
+</body>
+</html>
