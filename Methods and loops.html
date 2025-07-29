@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method and loops</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgb(223, 238, 14) 30%, rgb(253, 95, 22) 100%);
+            color: rgb(6, 1, 20);
+            font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+        }
+        h2{
+            text-align: center;
+            color: rgb(5, 2, 20);
+        
+        }
+        h3 {
+            text-align: center;
+            color: rgb(7, 3, 22);
+            text-decoration:solid rgb(0, 0, 0) 2px underline;
+            font-weight: 400;
+        }
+        p {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-weight: 100;
+            
+        }
+        h4 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+            font-weight: 200;
+        }
+        
+        </style>
+</head>
+<body>
+    <h2>Methods and Loops in JavaScript.</h2>
+    <h3><p>Explore various methods and loops in JavaScript</p></h3>
+<h4><i>First We Will Be Printing some random set of numbers:</i></h4>
+    <p id="randomNumbers"></p>
+    <script>
+        var text = "";
+        var i = 0;
+        while (i < 11) {
+            text += "<br> The number is " + i;
+            i++;
+        }
+        document.getElementById("randomNumbers").innerHTML = text;   
+    </script>
+
+    <h4><i>Next, we will round some numbers:</i></h4>
+    <p id="result"></p>
+    <script>
+        const num1 = 45.6;
+        const rounded1 = Math.round(num1); // 5
+        console.log(rounded1);
+        document.getElementById("result").innerHTML = "The rounded value of 45.6 is: " + rounded1;
+    </script>
+    <h4><i>Now, let's display the current date:</i></h4>
+    <p id="demo"></p>
+    <script>
+        var day;
+        switch(new Date().getDay()){
+            case 0:
+                day = "Sunday.";
+                break;
+            case 1:
+                day = "Monday.";
+                break;
+            case 2:
+                day = "Tuesday.";
+                break;
+            case 3:
+                day = "Wednesday.";
+                break;
+            case 4:
+                day = "Thursday.";
+                break;
+                case 5:
+                    day ="Friday.";
+                    break;
+                    case 6:
+                        day = "Saturday.";
+                    
+        }
+        document.getElementById("demo").innerHTML="Today is " + day
+    </script>
+</body>
+</html>
