@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+text-align: center;
+background:linear-gradient(to right, #f06, #4a90e2);
+color: white;
+         }
+    </style>
+</head>
+<body>
+    <h2>Let play with the Java script await/async🐱‍🏍</h2>
+    <p>In this actity we will be using the Jvascript async and await</p>
+    <p>Let do the calculation of three numbers:</p>
+    <p>30,23,21.</p>
+    <h1 id="result"></h1>
+    <script>
+        async function add(a,b,c) {
+            let response = await a *b / c;
+            display(response);
+        }
+        function display(some) {
+        document.getElementById("result").innerHTML 
+=some ;}
+add(30,23,21)
+    </script>
+</body>
+</html>
