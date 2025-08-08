@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        body {
+        background-color: lightblue;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        }
+        h2 {
+        color: darkblue;
+        }
+        input {
+        margin-top: 10px;
+        padding: 5px;
+        }
+        button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: darkblue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        }
+        button:hover {
+        background-color: blue;
+        }
+    </style>
+        </head>
+    <body>
+        <h2>WELCOME TO THE TEEN CLUB REISTRATION WEB.</h2>
+        <p>Please enter your age in the box below to confarm you are eligible to join the club.</p>
+            <input id="id1" type="number" min="10" max="18" required >
+        <button onclick="myfunction()">OK</button>
+        <p id="result"></p>
+        <p>If you are below the age of 10 or above the age of 18 you will not be able to join the club.</p>
+        <script>
+            function myfuntion() {
+                var see = document.getElementById("id1");
+                if (!see.checkValidity()) {
+                    document.getElementById("result").innnerHTML = see.validationMessage;
+                } else {
+                    document.getElementById("result").innerHTML = "Input is OK";
+                }
+            }
+            
+
+        </script>
+        </body>
+</html>
