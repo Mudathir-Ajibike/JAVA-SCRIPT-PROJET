@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+script {
+    background-color: aqua;
+}
+    </style>
+</head>
+<body>
+    <script>
+    var choice = prompt("Welcome to perimeter calculator. \n Please enter 1 for rectangle, 2 for triangle, 3 for circle")
+
+    if (choice == 1){
+    var L = prompt("Enter the length")
+    var W = prompt("Enter the width")
+    var result = 2*Number(L)*Number(W)
+    alert("The area is " + result)
+    }
+    
+    if (choice==2){
+    var h = prompt("Enter a")
+    var b = prompt("Enter b")
+    var c = prompt("Enter c")
+    var result = Number(h)+Number(b)+Number(c)
+    alert("The are is " + result)
+    }
+    
+    if (choice == 3){
+    var r = prompt("Enter the radius")
+    var result = 2*3.142*Number(r)
+    alert("The area is " + result)
+    }
+    </script>
+</body>
+</html>
